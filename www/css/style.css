@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;}
+/************************/
+
+.calculator{
+	height: 300px;
+	width: 185px;
+	border: 1px solid #000;
+}
+.calculator p{
+	height: 120px;
+	width: 100%;
+	font-size: 1em;
+}
+.calculator table tr td{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	padding: 10px;
+	font-size: 1.25em;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.calculator table tr td:hover{background-color: grey;}
