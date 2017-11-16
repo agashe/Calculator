@@ -2,24 +2,33 @@
 /************************/
 
 .calculator{
-	height: 300px;
-	width: 185px;
-	border: 1px solid #000;
-}
-.calculator p{
-	height: 120px;
+	height: 100%;
 	width: 100%;
-	font-size: 1em;
+	margin: 0 auto;
+}
+.calculator textarea{
+	display: inline-block;
+	height: 120px;
+	width: 85%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	resize: none;
+	font-size: 2em;
+	font-weight: bold;
+}
+.calculator table{
+	margin: 0 auto;
 }
 .calculator table tr td{
 	display: inline-block;
-	height: 20px;
-	width: 20px;
+	height: 45px;
+	width: 45px;
 	padding: 10px;
-	font-size: 1.25em;
+	font-size: 2.25em;
 	text-align: center;
 	font-weight: bold;
 	border: 1px solid #000;
 	cursor: pointer;
 }
-.calculator table tr td:hover{background-color: grey;}
+.calculator table tr td:hover{background-color: #606060;}

@@ -2,55 +2,80 @@ $(document).ready(function(){
 	var num = null, op = null;
 	
 	$("td").click(function(){
-		switch ($(this).html()) {			
+		switch ($(this).html()) {	
+			case 'C':
+				num = null;
+				op = null;
+				$(".calculator textarea").html("");
+			break;
+			
+			case 'del':
+				if (num == null) {
+					num = parseFloat($(".calculator textarea").html());
+					op = '+';
+					$(".calculator textarea").html("");
+				}
+			break;
+			
+			case '+/-':
+				if (num == null) {
+					num = parseFloat($(".calculator textarea").html());
+					op = '+';
+				}
+			break;
+			
+			case '?':
+					$(".calculator textarea").html("Created By Mohamed Yousef");
+			break;
+			
 			case "*":
 				if (num == null) {
-					num = parseFloat($(".calculator p").html());
+					num = parseFloat($(".calculator textarea").html());
 					op = '*';
-					$(".calculator p").html("");
+					$(".calculator textarea").html("");
 				}
 			break;
 			
 			case '/':
 				if (num == null) {
-					num = parseFloat($(".calculator p").html());
+					num = parseFloat($(".calculator textarea").html());
 					op = '/';
-					$(".calculator p").html("");
+					$(".calculator textarea").html("");
 				}
 			break;
 			
 			case '-':
 				if (num == null) {
-					num = parseFloat($(".calculator p").html());
+					num = parseFloat($(".calculator textarea").html());
 					op = '-';
-					$(".calculator p").html("");
+					$(".calculator textarea").html("");
 				}
 			break;
 			
 			case '+':
 				if (num == null) {
-					num = parseFloat($(".calculator p").html());
+					num = parseFloat($(".calculator textarea").html());
 					op = '+';
-					$(".calculator p").html("");
+					$(".calculator textarea").html("");
 				}
 			break;
 			
 			case '=':
 				switch (op) {			
 					case '*':
-						$(".calculator p").html(num * parseFloat($(".calculator p").html()));
+						$(".calculator textarea").html(num * parseFloat($(".calculator textarea").html()));
 					break;
 											
 					case '/':
-						$(".calculator p").html(num / parseFloat($(".calculator p").html()));
+						$(".calculator textarea").html(num / parseFloat($(".calculator textarea").html()));
 					break;
 					
 					case '-':
-						$(".calculator p").html(num - parseFloat($(".calculator p").html()));
+						$(".calculator textarea").html(num - parseFloat($(".calculator textarea").html()));
 					break;
 					
 					case '+':
-						$(".calculator p").html(num + parseFloat($(".calculator p").html()));
+						$(".calculator textarea").html(num + parseFloat($(".calculator textarea").html()));
 					break;
 				}
 				
@@ -59,9 +84,9 @@ $(document).ready(function(){
 			break;
 			
 			default:
-				temp = $(".calculator p").html();
+				temp = $(".calculator textarea").html();
 				temp = temp + $(this).html();
-				$(".calculator p").html(temp);
+				$(".calculator textarea").html(temp);
 			break;
 		}
 	});
