@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="org.camden.pgdiary" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Calculator</name>
     <description>
-        A blank PhoneGap app.
+        A simple calculator for android.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="modi401@hotmail.com">
+        Agashe
     </author>
+    <icon gap:platform="android" height="96" src="res\icon\android\icon-96-ldpi.png" width="96" />
+
     <content src="index.html" />
+    <preference name="phonegap-version" value="1.9.0" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="android" />
+    <preference name="fullscreen" value="false" />
     <access origin="*" />
 </widget>
