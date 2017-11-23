@@ -7,7 +7,7 @@
     <author email="modi401@hotmail.com">
         Agashe
     </author>
-    <icon gap:platform="android" height="96" src="res\icon\android\icon-96-ldpi.png" width="96" />
+    <icon gap:platform="android" height="96" src="icon-96-ldpi.png" width="96" />
 
     <content src="index.html" />
     <preference name="orientation" value="default" />
