@@ -1,0 +1,34 @@
+*{margin: 0;padding: 0;}
+/************************/
+
+.calculator{
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.calculator textarea{
+	display: inline-block;
+	height: 120px;
+	width: 85%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	resize: none;
+	font-size: 2em;
+	font-weight: bold;
+}
+.calculator table{
+	margin: 0 auto;
+}
+.calculator table tr td{
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	padding: 10px;
+	font-size: 2.25em;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.calculator table tr td:hover{background-color: #606060;}
